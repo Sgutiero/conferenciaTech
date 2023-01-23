@@ -1,0 +1,173 @@
+/* --------------------- *\
+        GENERALES
+\* --------------------- */
+
+body{
+    overflow-x: hidden;
+}
+
+.text-platzi {
+    color: #58fa96 !important;
+}
+
+.btn-platzi {
+    background-color: #58fa96;
+}
+.btn-platzi:hover {
+    background-color: #987cf5;
+}
+
+/* --------------------- *\
+        ENCABEZADO
+\* --------------------- */
+
+.img-logo {
+    width: 19px;
+    height: 19px;
+    align-self: center;
+}
+
+    .logo-top {
+        width: 80%;
+        height: 60%;
+        
+        border-radius: 4px 4px 0 0;
+        border: 3.5px solid;
+        border-bottom: none;
+        box-sizing: border-box;
+
+        position: relative;
+        top: 1px;
+    }
+    
+    /* .logo-bottom {
+        width: 100%;
+        height: 40%;
+
+        border-radius: 0 0 4px 4px;
+        border: 3.5px solid #87c739;
+        border-top: none;
+        box-sizing: border-box;
+    } */
+
+/* --------------------- *\
+           HERO
+\* --------------------- */
+
+#hero-carousel img {
+    height: 70vh;
+    object-fit: cover;
+    filter: grayscale(70%);
+}
+
+.capa-hero {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.capa-hero .container,
+.container .row {
+    height: 100%;
+}
+
+/* --------------------- *\
+      LUGAR Y FECHA
+\* --------------------- */
+
+#seccion-lugar-fecha {
+    color: white;
+    background-color: #343a40;
+}
+
+#seccion-lugar-fecha img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* --------------------- *\
+      PIE DE PAGINA
+\* --------------------- */
+
+#footer {
+    background: linear-gradient(90deg, #6d6d6d, #191919 25%, #89898a);
+}
+
+#footer a {
+    color: white;
+}
+
+.navbar .navbar-brand {
+    display: flex;
+}
+
+.card-img-top{
+    object-fit: cover;
+    height: 300px;
+    width: 350px;
+    cursor: pointer;
+}
+
+.card-img-top:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+iframe{
+    width: 500px;
+    height: 350px;
+}
+
+.go-top-container{
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    z-index: -1;
+  }
+  
+  .go-top-button{
+    width: 0rem;
+    height: 0rem;
+    background: #58fa96;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  .go-top-button .fotico{
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: .2s;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .show {
+    z-index: 10;
+  }
+  
+  .show .go-top-button{
+    animation: popup .3s ease-in-out;
+    width: 4.4rem;
+    height: 4.4rem;
+    z-index: 11;
+  }
+  
+  .show .fotico{
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
