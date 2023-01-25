@@ -170,4 +170,8 @@ iframe{
   .show .fotico{
     transform: translate(-50%, -50%) scale(1);
   }
+
+#modal{
+    z-index: 999;
+  }
   
